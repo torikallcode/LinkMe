@@ -42,7 +42,7 @@ export const ProductCard = ({ image, name, price, discount }) => {
         {/* Discount Badge */}
         {discount > 0 && (
           <div className="absolute top-4 left-4 bg-emerald-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
-            discount {discount}%
+            disc {discount}%
           </div>
         )}
       </div>
