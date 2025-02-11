@@ -32,7 +32,7 @@ export const ProductCard = ({ image, name, price, discount }) => {
       </button> */}
 
       {/* Product Image */}
-      <div className="relative aspect-[16/9] overflow-hidden shadow-md border-hitam rounded-b-2xl">
+      <div className="relative aspect-[16/9] overflow-hidden shadow-md border-hitam" >
         <img
           src={image}
           alt={name}
@@ -48,7 +48,7 @@ export const ProductCard = ({ image, name, price, discount }) => {
       </div>
 
       {/* Product Details */}
-      <div className="p-5 space-y-2">
+      <div className="px-5 py-4 space-y-1">
         <h3 className="text-xl font-bold text-gray-800 line-clamp-2">
           {name}
         </h3>
