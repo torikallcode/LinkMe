@@ -17,7 +17,7 @@ export const ProductCard = ({ image, name, price, discount }) => {
     }).format(number);
   };
   return (
-    <div className="group relative w-full bg-white rounded-2xl  shadow-lg overflow-hidden transition-all duration-500 hover:shadow-2xl">
+    <div className="group relative w-full bg-gray-200  rounded-xl  shadow-lg overflow-hidden transition-all duration-500 hover:shadow-2xl">
       {/* Wishlist Button */}
       {/* <button
         onClick={() => setIsLiked(!isLiked)}
@@ -36,7 +36,7 @@ export const ProductCard = ({ image, name, price, discount }) => {
         <img
           src={image}
           alt={name}
-          className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+          className="absolute inset-0 w-full h-full object-cover transition-transform duration-500"
         />
 
         {/* Discount Badge */}
@@ -49,7 +49,7 @@ export const ProductCard = ({ image, name, price, discount }) => {
 
       {/* Product Details */}
       <div className="px-5 py-4 space-y-1">
-        <h3 className="text-xl font-bold text-gray-800 line-clamp-2">
+        <h3 className="text-xl font-bold text-hitam line-clamp-2">
           {name}
         </h3>
 
@@ -57,10 +57,10 @@ export const ProductCard = ({ image, name, price, discount }) => {
           <div className="flex items-center space-x-2">
             {discount > 0 ? (
               <>
-                <span className="text-xl font-bold text-emerald-600">
+                <span className="text-xl font-bold text-emerald-500">
                   {formatRupiah(calculateDiscountedPrice())}
                 </span>
-                <span className="text-sm text-gray-400 line-through">
+                <span className="text-sm text-gray-500 line-through">
                   {formatRupiah(price)}
                 </span>
               </>
