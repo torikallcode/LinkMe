@@ -8,20 +8,20 @@ export const Home = () => {
     {
       image: 'img/komik2.png',
       name: 'Komik',
-      price: 125000,
-      discount: 51
+      price: 130000,
+      discount: 50
     },
     {
       image: 'img/netflix (1).png',
       name: 'Netflix',
-      price: 100000,
-      discount: 51
+      price: 98000,
+      discount: 50
     },
     {
       image: 'img/komik2.png',
       name: 'Komik',
-      price: 100000,
-      discount: 51
+      price: 98000,
+      discount: 50
     }
   ]
 
