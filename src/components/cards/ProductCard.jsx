@@ -17,7 +17,7 @@ export const ProductCard = ({ image, name, price, discount }) => {
     }).format(number);
   };
   return (
-    <div className="group relative w-full bg-gray-200  rounded-xl  shadow-lg overflow-hidden transition-all duration-500 hover:shadow-2xl">
+    <div className="group relative w-full bg-gray-200  rounded-lg  shadow-lg overflow-hidden transition-all duration-500 hover:shadow-2xl">
       {/* Wishlist Button */}
       {/* <button
         onClick={() => setIsLiked(!isLiked)}
