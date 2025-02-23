@@ -4,7 +4,7 @@ export const ListWeb = ({ text }) => {
     <a
       target="_blank"
       rel="noopener noreferrer"
-      className='relative w-full max-w-md overflow-hidden'
+      className='relative w-full overflow-hidden'
     >
       <div className='absolute inset-0 bg-gradient-to-r from-[#2D7D4C] to-[#A4D4B4] opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-xl'></div>
 
