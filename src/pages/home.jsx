@@ -2,6 +2,7 @@ import React, { Children } from 'react'
 import { ProductCard } from '../components/cards/ProductCard'
 import { List } from '../components/lists/List'
 import { Announcement } from '../components/announcement/Announcement'
+import { ListProduct } from '../components/lists/ListProduct'
 
 export const Home = () => {
 
@@ -75,8 +76,8 @@ export const Home = () => {
           ))}
         </div>
         <div>
-          <h1 className='text-xl font-semibold font-poppins text-hitam bg-putih p-3 rounded-md mb-3'>Daftar Produk</h1>
-          <div className='font-poppins flex flex-col space-y-5 lg:grid lg:grid-cols-2 lg:gap-x-3'>
+          <h1 className='text-xl font-semibold font-poppins text-hitam bg-putih p-3 rounded-md mb-3'>New Product</h1>
+          <div className='font-poppins flex flex-col space-y-5 lg:grid lg:grid-cols-2 lg:gap-x-3 mb-5'>
             {PRODUCT_DATA.map((product, index) => (
               <ProductCard
                 key={index}
@@ -87,6 +88,8 @@ export const Home = () => {
               />
             ))}
           </div>
+          <h1 className='text-xl font-semibold font-poppins text-hitam bg-putih p-3 rounded-md mb-3'>More Product</h1>
+          <ListProduct />
         </div>
       </div>
     </div>
